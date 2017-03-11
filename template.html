@@ -1,11 +1,11 @@
 <div class="pagination">  
         {% if previouspage >= 0 %}
-            <a style="color:steelblue"href="{%url "indexnav" choice%}?page={{ previouspage}}">previous</a>
+            <a style="color:steelblue"href="{%url "yoururlname" %}?page={{ previouspage}}">previous</a>
         {% endif %}
         <span class="current">
             page {{ current }} of {{ totalpages}}
         </span>
         {% if current != totalpages %}
-            <a style="color:steelblue" href="{%url "indexnav" choice%}?page={{page}}">next</a>
+            <a style="color:steelblue" href="{%url "yoururlname" %}?page={{page}}">next</a>
         {% endif %}
 </div>
