@@ -3,6 +3,7 @@
           totalpages=int(ceil(limit/10.0))
           last=limit%10         
           try: 
+      
                page=int(page)
                if page<=limit and page >= 0:
                   currentpage=(page/10)+1               
